@@ -6,16 +6,17 @@ The intention with this git repo is to give you an angle of attack for your own 
 So to clearify this is NOT a complete course, but merely to show you the concopt of running your own code on the PFC.
 
 # Programs used
-Github Desktop : https://desktop.github.com/
+[Github Desktop](https://desktop.github.com/)
 
-Docker Desktop : https://docs.docker.com/desktop/windows/install/
+[Docker Desktop](https://docs.docker.com/desktop/windows/install/)
 
-Anaconda : https://www.anaconda.com/products/distribution ( to administer python versions and virtual environmets and more )
+[Anaconda](https://www.anaconda.com/products/distribution) ( to administer python versions and virtual environmets and more )
 
-Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and test )
+[Microsoft Visual Studio Code](https://code.visualstudio.com/) ( to program and test )
 
 # Steps to take:
-Install required programs
+Create an account on [Docker](https://www.docker.com/) \
+Install required programs \
 Develop on your PC \
 Convert the project to run on a Wago PFC and upload to docker hub (so you can pull the image to your PFC later on) \
 Pull your docker image to the PFC and run it.
