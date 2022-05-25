@@ -5,8 +5,12 @@ For other programming languages the procedure would be pretty much the same. \
 The intention with this git repo is to give you an angle of attack for your own project with the information needed to get you up and running quickly.\
 So to clearify this is NOT a complete course, but merely to show you the concopt of running your own code on the PFC.
 
+# Programs used
+Anaconda : https://www.anaconda.com/products/distribution ( to administer python versions and virtual environmets and more )
+Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and test )
+
 ## Steps to take:
-Develop on your PC and test on a Raspberry Pi.                        ( its easier this way ) \
+Develop on your PC and test on a Raspberry Pi.                        ( its easier this way - at least i think so ) \
 Convert the project to run on a Wago PFC and upload to docker hub     ( so you can pull the image to your PFC later on ) \
 Pull your docker image to the PFC and run it.
 
@@ -24,7 +28,7 @@ CMD ["python", "myPythonprogram.py"]
 ### Build the image
 Go to the dir where you have your Dockerfile and your python script and run the line underneath
 
-docker build -t myTag .
+docker build -t myTag . (remember the dot!! . . . . . . . )
 
 ### Run the program in a container with this line
 docker run --rm myTag \
