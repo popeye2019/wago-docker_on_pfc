@@ -9,7 +9,7 @@ So to clearify this is NOT a complete course, but merely to show you the concopt
 Anaconda : https://www.anaconda.com/products/distribution ( to administer python versions and virtual environmets and more )
 Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and test )
 
-## Steps to take:
+# Steps to take:
 Develop on your PC and test on a Raspberry Pi.                        ( its easier this way - at least i think so ) \
 Convert the project to run on a Wago PFC and upload to docker hub     ( so you can pull the image to your PFC later on ) \
 Pull your docker image to the PFC and run it.
