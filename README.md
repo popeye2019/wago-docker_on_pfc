@@ -6,10 +6,17 @@ The intention with this git repo is to give you an angle of attack for your own 
 So to clearify this is NOT a complete course, but merely to show you the concopt of running your own code on the PFC.
 
 # Programs used
+Github Desktop : https://desktop.github.com/
+
+Docker Desktop : https://docs.docker.com/desktop/windows/install/
+
 Anaconda : https://www.anaconda.com/products/distribution ( to administer python versions and virtual environmets and more )
+
 Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and test )
 
+
 # Steps to take:
+Install required programs - make sure 
 Develop on your PC and test on a Raspberry Pi.                        ( its easier this way - at least i think so ) \
 Convert the project to run on a Wago PFC and upload to docker hub     ( so you can pull the image to your PFC later on ) \
 Pull your docker image to the PFC and run it.
@@ -41,11 +48,15 @@ docker run --rm 78ce2f690466
 -d daemon mode - if you wish to run the program in the background. This way the terminal will not be blocked but you will no see messages from the running container either.
 
 ## Make code compatible with the Wago PFC and PUSH
+!!! Make sure you have Docker Desktop installed and you are logged in !!!
+
 docker buildx build --platform linux/arm/v7 -t yourdockerusername/yourdockerrepo:repoversion --push .
 
-this is and example: "docker buildx build --platform linux/arm/v7 -t dannyolsen/wago-docker_on_pfc:latest --push ."
+this is an example: "docker buildx build --platform linux/arm/v7 -t dannyolsen/wago-docker_on_pfc:latest --push ."
 
 if you want to make your program available for other architectures "--platform linux/amd64,linux/arm64,linux/arm/v7" can be used in the line above
+
+documentation can be found here: https://docs.docker.com/engine/reference/commandline/buildx_build/
 
 ## Running the Docker image on the PFC
 When running the line below, if the image is not present on the PFC it will be downloaded first and run afterwards \
