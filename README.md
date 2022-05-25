@@ -17,7 +17,7 @@ Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and t
 
 # Steps to take:
 Install required programs - make sure 
-Develop on your PC and test on a Raspberry Pi.                        ( its easier this way - at least i think so ) \
+Develop on your PC \
 Convert the project to run on a Wago PFC and upload to docker hub     ( so you can pull the image to your PFC later on ) \
 Pull your docker image to the PFC and run it.
 
@@ -26,10 +26,12 @@ Pull your docker image to the PFC and run it.
 In order to run your program in a container, you must build the program images first, with the help of a Dockerfile
 
 ### Structure of dockerfile
-FROM python       \
-WORKDIR /app      \
-COPY . /app/      \
-EXPOSE 80         \
+FROM python       
+
+WORKDIR /app      
+
+COPY . /app/      
+
 CMD ["python", "myPythonprogram.py"]
 
 ### Build the image
