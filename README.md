@@ -14,7 +14,6 @@ Anaconda : https://www.anaconda.com/products/distribution ( to administer python
 
 Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and test )
 
-
 # Steps to take:
 Install required programs
 Develop on your PC \
@@ -22,8 +21,8 @@ Convert the project to run on a Wago PFC and upload to docker hub (so you can pu
 Pull your docker image to the PFC and run it.
 
 # Lines that will help you do the work
-## Build images for testing on your Raspberry Pi (or similar)
-In order to run your program in a container, you must build the program images first, with the help of a Dockerfile
+## Build images for testing
+In order to run your program in a container, you must build the program images first, in this case with the help of a Dockerfile
 
 ### Structure of dockerfile
 FROM python       
