@@ -37,10 +37,10 @@ CMD ["python", "myPythonprogram.py"]
 ### Build the image
 Go to the dir where you have your Dockerfile and your python script and run the line underneath
 
-docker build -t myTag . (remember the dot!! . . . . . . . )
+docker build -t mytag . (remember the dot!! . . . . . . . )
 
 ### Run the program in a container with this line
-docker run --rm myTag \
+docker run --rm mytag \
 or \
 docker run --rm 78ce2f690466
 
