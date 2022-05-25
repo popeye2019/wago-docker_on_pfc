@@ -16,9 +16,9 @@ Microsoft Visual Studio Code : https://code.visualstudio.com/ ( to program and t
 
 
 # Steps to take:
-Install required programs - make sure 
+Install required programs
 Develop on your PC \
-Convert the project to run on a Wago PFC and upload to docker hub     ( so you can pull the image to your PFC later on ) \
+Convert the project to run on a Wago PFC and upload to docker hub (so you can pull the image to your PFC later on) \
 Pull your docker image to the PFC and run it.
 
 # Lines that will help you do the work
